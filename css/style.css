@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
+    transition: .5s ease;
 }
 :root{
      --green: rgb(33, 110, 18);
