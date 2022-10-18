@@ -4,6 +4,10 @@
     box-sizing: border-box;
     font-family: sans-serif;
 }
+:root{
+     --green: rgb(33, 110, 18);
+     --blue: rgb(0, 110, 255);
+}
 html{
     font-size: 62.5%;
     scroll-behavior: smooth;
@@ -16,7 +20,7 @@ body{
 header{
     position: fixed;
     top: 0;
-    z-index: 1;
+    z-index: 4;
     width: 100%;
 }
 .nav{
@@ -36,7 +40,7 @@ header{
 .items-nav > li:nth-child(n + 2){
     margin-left: 6rem;
 }
-li a{
+.anim{
     text-decoration: none;
     color: white;
     font-size: 1.8rem;
@@ -48,8 +52,14 @@ li a{
     transition: .5s ease;
     letter-spacing: .1rem;
 }
-li a:hover{
+.anim:hover{
     color: blue;
+    text-shadow: 0 0 1rem white,
+    0 0 2.5rem white,
+    0 0 4.5rem white;
+}
+.animG:hover{
+    color: green;
     text-shadow: 0 0 1rem white,
     0 0 2.5rem white,
     0 0 4.5rem white;
@@ -66,9 +76,9 @@ main{
     width: 80%;
     min-height: 100vh;
     border-radius: 5rem;
-    box-shadow: 0 0 5rem blue,
-    0 0 10rem blue,
-    0 0 15rem blue;
+    box-shadow: 0 0 2rem blue,
+    0 0 4rem blue,
+    0 0 8rem blue;
 }
 #sect-1{
     display: flex;
@@ -84,7 +94,7 @@ main{
     width: 600px;
     height: 200px;
 }
-.box h2{
+.tit1{
     color: white;
     font-size: 5rem;
     font-weight: 500;
